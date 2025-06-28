@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Weather Now</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #1976d2;
+      padding: 24px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      background-color: #1565c0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 12px 0;
+      font-size: 1.05rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #0d47a1;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .content h2 {
+      color: #1976d2;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    footer {
+      background-color: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Weather Now</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="forecast.html">Forecast</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="content">
+    <h2>About Us</h2>
+    <p><strong>Weather Now</strong> is a simple and intuitive weather web application created to help users get quick and accurate weather updates for any city.</p>
+    <p>Our platform is designed with a clean, responsive interface suitable for students, developers, or anyone interested in checking live weather information easily.</p>
+    <p>This project is developed as part of an internship assignment focused on learning and building real-world web applications using HTML, CSS, and JavaScript, and optionally deploying them on platforms like Azure.</p>
+    <p>We aim to continuously improve the app by adding real-time API integration and modern weather features.</p>
+    <img src="images/feature.png" alt="Feature Image">
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Weather Now. Designed with passion during internship learning.</p>
+  </footer>
+</body>
+
+</html>

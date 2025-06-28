@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forecast - Weather Now</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #1976d2;
+      padding: 24px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      background-color: #1565c0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 12px 0;
+      font-size: 1.05rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #0d47a1;
+    }
+
+    .forecast-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .forecast-day {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    .forecast-day:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    .forecast-day h3 {
+      color: #1976d2;
+      margin-bottom: 10px;
+    }
+
+    .forecast-day p {
+      margin: 4px 0;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background-color: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Weather Now</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="forecast.html">Forecast</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="forecast-container">
+    <div class="forecast-day" style="animation-delay: 0s;">
+      <h3>Monday</h3>
+      <p>Sunny</p>
+      <p>High: 30°C</p>
+      <p>Low: 22°C</p>
+    </div>
+    <div class="forecast-day" style="animation-delay: 0.2s;">
+      <h3>Tuesday</h3>
+      <p>Partly Cloudy</p>
+      <p>High: 28°C</p>
+      <p>Low: 21°C</p>
+    </div>
+    <div class="forecast-day" style="animation-delay: 0.4s;">
+      <h3>Wednesday</h3>
+      <p>Rainy</p>
+      <p>High: 24°C</p>
+      <p>Low: 20°C</p>
+    </div>
+    <div class="forecast-day" style="animation-delay: 0.6s;">
+      <h3>Thursday</h3>
+      <p>Cloudy</p>
+      <p>High: 26°C</p>
+      <p>Low: 19°C</p>
+    </div>
+    <div class="forecast-day" style="animation-delay: 0.8s;">
+      <h3>Friday</h3>
+      <p>Sunny</p>
+      <p>High: 31°C</p>
+      <p>Low: 23°C</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Weather Now. 5-day forecast at a glance.</p>
+  </footer>
+</body>
+
+</html>
